@@ -21,7 +21,6 @@ $sql = "INSERT INTO admins
 VALUES 
 (:name, :email, :password)"; 
 $stmt = $pdo->prepare($sql); 
-
 $stmt->execute([ 
 "name" => $name, 
 "email" => $email, 
